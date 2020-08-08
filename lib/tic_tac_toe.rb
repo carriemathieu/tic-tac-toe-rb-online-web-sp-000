@@ -1,4 +1,4 @@
-# Define your WIN_COMBINATIONS constant
+# All different win possibilities
 WIN_COMBINATIONS = [
   [0,1,2], # Top row
   [3,4,5],  # Middle row
@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [
   [2,4,6] # diagonal
 ]
 
-# display board according to board
+# display board according to board array
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
