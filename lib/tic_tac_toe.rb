@@ -101,10 +101,10 @@ def play(board)
   until over?(board)
     turn(board)
   end
-  # count = 0
-  #until count == 9 
-   # turn(board)
-    #count += 1
+  if won?(board)
+    puts "Congrats"
+  else
+    puts "Draw"
   end 
 end
 
