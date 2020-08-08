@@ -98,7 +98,7 @@ def winner(board)
 end
 
 def play(board)
-  inpute = gets
+  until over?(board)
   # count = 0
   #until count == 9 
    # turn(board)
