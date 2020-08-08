@@ -47,7 +47,14 @@ def turn(board)
   end
 end
 
-
+def turn_count(board)
+  count = 0
+  board.each do |player|
+    if player == "X" || player == "O"
+      count += 1
+    end
+  end
+  return count
 
 
 def play(board)
