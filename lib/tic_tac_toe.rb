@@ -23,7 +23,7 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, poition, player_token)
+def move(board, index, player_token)
   board[index] = current_player
 end
 
