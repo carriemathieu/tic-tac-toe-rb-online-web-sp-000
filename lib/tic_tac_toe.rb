@@ -55,6 +55,7 @@ def turn_count(board)
     end
   end
   return count
+end
 
 
 def play(board)
