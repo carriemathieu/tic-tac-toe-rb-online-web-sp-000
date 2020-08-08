@@ -66,16 +66,6 @@ def current_player(board)
 end
 
 
-def play(board)
-  count = 0
-  until count == 9 
-    turn(board)
-    count += 1
-  end 
-end
-
-
-
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
     board[combo[0]] == board[combo[1]] &&
@@ -101,6 +91,17 @@ def over?(board)
     true
   end
 end
+
+def play(board)
+  count = 0
+  until count == 9 
+    turn(board)
+    count += 1
+  end 
+end
+
+
+
 
 def winner(board)
   if won?(board)
