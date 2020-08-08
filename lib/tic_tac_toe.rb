@@ -91,6 +91,12 @@ def over?(board)
   end
 end
 
+def winner(board)
+  if won?(board)
+    return board[won?(board)[0]]
+  end
+end
+
 def play(board)
   count = 0
   until count == 9 
@@ -102,8 +108,3 @@ end
 
 
 
-def winner(board)
-  if won?(board)
-    return board[won?(board)[0]]
-  end
-end
